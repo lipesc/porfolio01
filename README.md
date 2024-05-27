@@ -1,7 +1,8 @@
 # portfolio_01
 [Link para o site](https://lipesc.github.io/porfolio01/)
+no github pages\.
 
-Site básico usando elementos semânticos e css.
+Site básico usando elementos semânticos e css.\
 primeiro commit
 
 ![W3C CSS Validated](http://jigsaw.w3.org/css-validator/images/vcss-blue)
