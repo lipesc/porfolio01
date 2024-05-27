@@ -1,0 +1,147 @@
+:root {
+  color-scheme: light dark;
+  /* Catppuccin Latte/Mocha */
+  --rosewater: light-dark(#dc8a78, #f5e0dc);
+  --flamingo: light-dark(#dd7878, #f2cdcd);
+  --pink: light-dark(#ea76cb, #f5c2e7);
+  --mauve: light-dark(#8839ef, #cba6f7);
+  --red: light-dark(#d20f39, #f38ba8);
+  --maroon: light-dark(#e64553, #eba0ac);
+  --peach: light-dark(#fe640b, #fab387);
+  --yellow: light-dark(#df8e1d, #f9e2af);
+  --green: light-dark(#40a02b, #a6e3a1);
+  --teal: light-dark(#179299, #94e2d5);
+  --sky: light-dark(#04a5e5, #89dceb);
+  --sapphire: light-dark(#209fb5, #74c7ec);
+  --blue: light-dark(#1e66f5, #89b4fa);
+  --lavender: light-dark(#7287fd, #b4befe);
+  --text: light-dark(#4c4f69, #cdd6f4);
+  --subtext1: light-dark(#5c5f77, #bac2de);
+  --subtext0: light-dark(#6c6f85, #a6adc8);
+  --overlay2: light-dark(#7c7f93, #9399b2);
+  --overlay1: light-dark(#8c8fa1, #7f849c);
+  --overlay0: light-dark(#9ca0b0, #6c7086);
+  --surface2: light-dark(#acb0be, #585b70);
+  --surface1: light-dark(#bcc0cc, #45475a);
+  --surface0: light-dark(#ccd0da, #313244);
+  --base: light-dark(#eff1f5, #1e1e2e);
+  --mantle: light-dark(#e6e9ef, #181825);
+  --crust: light-dark(#dce0e8, #11111b);
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: "Fira Code";
+  src: url("assets/firecode.ttf");
+}
+
+html, body {
+  
+  box-sizing: border-box;
+  height: 100%;
+}
+
+footer {
+  display: none;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+  background-color: var(--mantle);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  font-family: "Fira code", monospace;
+
+}
+a:link {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--lavender);
+  text-decoration: none;
+}
+a:hover,
+a:active {
+    color: var(--sky);
+    text-decoration: underline;
+}
+
+main {
+  background-color: var(--base);
+  border-radius: 2rem;
+  margin: auto 1rem;
+  max-width: 25rem;
+  padding: 1rem;
+}
+
+section {
+  background-color: var(--surface0);
+  border-radius: 1rem;
+  max-width: 24rem;
+  padding: 1rem;
+}
+p {
+  text-align: center;
+  text-wrap: balance;
+}
+
+section > p {
+  text-align: center;
+}
+
+footer > a {
+  display: inline-block;
+}
+h1,
+h2 {
+    font-weight: 400;
+    text-align: center;
+}
+hr {
+  color: var(--mauve);
+}
+
+.artpixel {
+  border-radius: 1rem;
+}
+
+.subtle {
+  color: var(--overlay1);
+  text-align: center;
+}
+
+.float-left {
+  float: left;
+}
+
+.subtle + p {
+  display: inline-block;
+}
+@media (min-width: 27rem) {
+  main {
+      margin: auto;
+  }
+}
+
+@media (min-width: 33rem) {
+  footer {
+      display: block;
+      text-align: center;
+  }
+  main {
+    border-radius: 3rem;
+    max-width: 31rem;
+    padding: 2rem;
+  }
+  section {
+      max-width: 29rem;
+  }
+}
